@@ -3,7 +3,7 @@
 
 -- if getCore():isDedicated()
 
-if getActivatedMods():contains("Smoker") or getActivatedMods():contains("jiggasGreenfireMod") or getActivatedMods():contains("MoreSmokes") then 
+if getActivatedMods():contains("Smoker") or getActivatedMods():contains("jiggasGreenfireMod") or getActivatedMods():contains("MoreSmokes") or getActivatedMods():contains("Hydrocraft")then 
 	IDNAL="MODDEDIDNAL"
 else IDNAL="IDNAL"
 end
@@ -16,11 +16,16 @@ function IDNALCheckInventoryForCigarette(player)
 	local smokable = {}
 	
 	--Do we have smokable in our pocket
-	for i=0, inventoryItems:size()-1 do			
-		if inventoryItems:get(i):getEatType() ==  ('Cigarettes') or inventoryItems:get(i):getEatType() == ('CigarettesOne') then
-			--if inventoryItems:get(i):getDisplayName() ~= ('Candy Cigarette') then
-				smokable[IDNALgetTableSize(smokable)] = inventoryItems:get(i)
-			--end
+	for i=0, inventoryItems:size()-1 do				
+		print(inventoryItems:get(i):getType())		
+
+		--Custom search for compatibility with "hydrocraft b41 continued"
+		if inventoryItems:get(i):getType() == ("HCCigar") or inventoryItems:get(i):getType() == ("HCCigarhandrolled") or inventoryItems:get(i):getType() == ("HCCigaretteslights") or inventoryItems:get(i):getType() == ("HCCigarettesmenthol") then
+			smokable[IDNALgetTableSize(smokable)] = inventoryItems:get(i)
+		end
+
+		if inventoryItems:get(i):getEatType() ==  ('Cigarettes') or inventoryItems:get(i):getEatType() == ('CigarettesOne') then			
+			smokable[IDNALgetTableSize(smokable)] = inventoryItems:get(i)			
 		end	
 	end
 
@@ -31,10 +36,14 @@ function IDNALCheckInventoryForCigarette(player)
 			--We look inside each container for smokable
 			local ContainerContent = inventoryItems:get(i):getItemContainer():getItems()				
 			for i=0, ContainerContent:size()-1 do				
-				if ContainerContent:get(i):getEatType() ==  ('Cigarettes') or ContainerContent:get(i):getEatType() == ('CigarettesOne')  then
-					--if inventoryItems:get(i):getDisplayName() ~= ('Candy Cigarette') then
-						smokable[IDNALgetTableSize(smokable)] = ContainerContent:get(i)
-					--end
+				
+				--Custom search for compatibility with "hydrocraft b41 continued"
+				if ContainerContent:get(i):getType() == ("HCCigar") or ContainerContent:get(i):getType() == ("HCCigarhandrolled") or ContainerContent:get(i):getType() == ("HCCigaretteslights") or ContainerContent:get(i):getType() == ("HCCigarettesmenthol") then
+					smokable[IDNALgetTableSize(smokable)] = ContainerContent:get(i)
+				end
+
+				if ContainerContent:get(i):getEatType() ==  ('Cigarettes') or ContainerContent:get(i):getEatType() == ('CigarettesOne')  then					
+					smokable[IDNALgetTableSize(smokable)] = ContainerContent:get(i)	
 				end
 			end
 		end

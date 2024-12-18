@@ -19,8 +19,9 @@ description=[/list]
 description=
 description=[h2]Mod Compatibility[/h2]
 description=[list]
-description=[*]Smoker : https://steamcommunity.com/workshop/filedetails/?id=2026976958
-description=[*]Green Fire: https://steamcommunity.com/sharedfiles/filedetails/?id=1703604612
+description=[*] Smoker : https://steamcommunity.com/workshop/filedetails/?id=2026976958
+description=[*] Green Fire: https://steamcommunity.com/sharedfiles/filedetails/?id=1703604612
+description=[*] More Smokes : https://steamcommunity.com/sharedfiles/filedetails/?id=2923439994
 description=[/list]
 description=
 description=[h2] Last Update : [/h2]
@@ -28,6 +29,8 @@ description=https://steamcommunity.com/sharedfiles/filedetails/changelog/2714198
 description=
 description=[h3]Current Translation Available[/h3]
 description=FR/ EN / DE / ES /  PTBR / RU / CN / NL / CS / IT / CH
+description=
+description=[h3]Video by https://www.youtube.com/@Werlias [/h3]
 description=
 description=[b][url=https://ko-fi.com/fingbel][img]https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11d430afb112ea33c3aa5_Button-1-p-500.png[/img][/url][/b]
 description=[b][url=https://github.com/Fingbel/I-Dont-Need-A-Lighter]Github [/url]
