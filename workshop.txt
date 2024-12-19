@@ -1,6 +1,6 @@
 version=1
 id=2714198296
-title=I Don't Need A Lighter
+title=[B42] I Don't Need A Lighter
 description=[h2] What is this mod ? [/h2]
 description=[noparse] So you're telling me that people can't light a cigarette while sitting in front of a campfire or while driving around in a 90's car ? Well this is over with this mod. You now have access to a car-lighter within every car and you can also light a cigarette on any kitchen stove or similar source of flame ![/noparse]
 description=
@@ -42,5 +42,5 @@ description=I Might Need a Lighter: https://steamcommunity.com/sharedfiles/filed
 description=Fasten Your Seatbelt : https://steamcommunity.com/sharedfiles/filedetails/?id=2722218474
 description=
 description=[h3] Mod Infos : [/h3]
-tags=Build 41;Balance;Misc;Multiplayer;Realistic
+tags=Build 41;Build 42;Balance;Misc;Multiplayer;Realistic
 visibility=public
