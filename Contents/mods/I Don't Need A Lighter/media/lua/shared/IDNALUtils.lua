@@ -1,16 +1,6 @@
 --I Don't Need A Lighter Mod by Fingbel
 
-
--- if getCore():isDedicated()
-
-if getActivatedMods():contains("Smoker") or getActivatedMods():contains("jiggasGreenfireMod") or getActivatedMods():contains("MoreSmokes") or getActivatedMods():contains("Hydrocraft")then 
-	IDNAL="MODDEDIDNAL"
-else IDNAL="IDNAL"
-end
-
---This function is responsible to confirm the presence of cigarette in the player inventory 
 --This function return an array(duplicate removed) of one of each of the possible smokable items
-
 function IDNALCheckInventoryForCigarette(player)
 	local inventoryItems = player:getInventory():getItems()
 	local smokable = {}

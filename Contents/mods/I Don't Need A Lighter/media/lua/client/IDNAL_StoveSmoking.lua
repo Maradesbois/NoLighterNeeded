@@ -20,11 +20,6 @@ function ContextDrawing(player, context, stove, smokables)
 	--If we do not have nothing to smoke then we don't draw anything
 	if smokables == nil then return
 
-		--PREVIOUS METHOD : This add a red option not selectable, this create clutter
-		--local foo = context:addOptionOnTop(getText('ContextMenu_Smoke'), player, stove)
-		--foo.notAvailable = true
-		--return	
-
 	--If we have only one smokable type in the array 
 	elseif IDNALgetTableSize(smokables) == 1 then
 		option = context:addOptionOnTop(getText('ContextMenu_Smoke') .."  ".. smokables[0]:getDisplayName(), player, OnStoveSmoking, stove, smokables[0])
