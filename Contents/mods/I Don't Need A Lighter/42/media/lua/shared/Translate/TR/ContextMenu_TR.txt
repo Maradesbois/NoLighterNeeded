@@ -6,10 +6,10 @@ ContextMenu_TR = {
 	ContextMenu_LightCigaretteWithFire = "Ateþte sigara yak"
 	ContextMenu_StartCarSmoking = "Arabada sigara yak "
 
-	ContextMenu_Smoke = "Ýç"
+	ContextMenu_Smoke = "Ä°Ã§"
 
-	ContextMenu_CarLighter = "Araba çakmaðý"
-	ContextMenu_CarOutOfCigarette = "<br> Ýçecek sigara Yok"
-	ContextMenu_CarNoBattery = "<br> Akü yok ya da kayýp"
-	ContextMenu_CarNoKeyOrWire = "<br> Anahtar yok / Düz kontak yapýlmamýþ"
+	ContextMenu_CarLighter = "Araba Ã§akmaÄŸÄ±"
+	ContextMenu_CarOutOfCigarette = "<br> Ä°Ã§ecek sigara Yok"
+	ContextMenu_CarNoBattery = "<br> AkÃ¼ yok ya da kayÄ±p"
+	ContextMenu_CarNoKeyOrWire = "<br> Anahtar yok / DÃ¼z kontak yapÄ±lmamÄ±ÅŸ"
 }
